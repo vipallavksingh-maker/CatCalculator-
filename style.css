@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body {
+    background-image: url("cutecat.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#calc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#screen{
+    height: 55px;
+    width: 420px;
+    border: 1px solid black;
+    display: flex;
+    align-items: last baseline;
+    justify-content: flex-end;
+    font-size: 26px;
+    background-color: rgb(172, 159, 133);
+}
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+button{
+    font-size: 24px;
+    font-weight: 500;
+    height: 30px;
+    width: 70px;
+    background-color: whitesmoke;
+    border: 1px sold black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
