@@ -1,54 +1,180 @@
+
 *{
     margin: 0;
     padding: 0;
 }
+
+header{
+width: 100%;
+box-sizing: border-box;
+padding: 15px 30px;
+background: rgba(0, 0, 0, 0.75);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.brand img {
+    width: 75px;
+    height: 65px;
+    object-fit: contain;
+    background: black;
+    border-radius: 10px;
+}
+.brand-text p {
+    color: #d6c5a8;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.brand-text h1{
+     color: #d6c5a8;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin: 0;
+}
+
 #main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: calc(100vh - 100px);
 }
+
 body {
-    background-image: url("cutecat.jpg");
+    background-image: url("cutecat1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 #calc{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items:center;
     justify-content: space-evenly;
 }
+
 #screen{
     height: 55px;
-    width: 420px;
+    width: min(420px, 90vw);
+    box-sizing: border-box;
     border: 1px solid black;
     display: flex;
     align-items: last baseline;
     justify-content: flex-end;
     font-size: 26px;
     background-color: rgb(172, 159, 133);
+    padding: 10px;
+    overflow-x: auto;
 }
+
 #buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 30px;
+    gap: 10px;
+    width: min(420px, 90vw);
 }
+
 button{
     font-size: 24px;
     font-weight: 500;
-    height: 30px;
-    width: 70px;
-    background-color: whitesmoke;
-    border: 1px sold black;
-    border-radius: 5px;
+    width: 100px;
+    aspect-ratio: 1/0.8;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 8px;
     cursor: pointer;
-    color: black;
+    color: whitesmoke;
+    
 }
+
+button{
+    transition: transform 0.2s ease;
+}
+button:active{
+    transform: scale(0.93);
+}
+
+button :hover {
+    transform: scale(1.06);
+}
+
+
+button:nth-child(1){
+    background-image: url("Cat 1.jpg");
+}
+
+button:nth-child(2){
+    background-image: url("Cat 2.jpg");
+}
+
+button:nth-child(3){
+    background-image: url("Cat 3.jpg");
+}
+
+button:nth-child(4){
+    background-image: url("Cat 4.jpg");
+}
+
+button:nth-child(5){
+    background-image: url("Cat 5.jpg");
+}
+
+button:nth-child(6){
+    background-image: url("Cat 6.jpg");
+}
+
+button:nth-child(7){
+    background-image: url("Cat 7.jpg");
+}
+
+button:nth-child(8){
+    background-image: url("Cat 8.jpg");
+}
+
+button:nth-child(9){
+    background-image: url("Cat 9.jpg");
+}
+
+button:nth-child(10){
+    background-image: url("Cat 10.jpg");
+}
+
+button:nth-child(11){
+    background-image: url("Cat 11.jpg");
+}
+
+button:nth-child(12){
+    background-image: url("Cat 12.jpg");
+}
+
+button:nth-child(13){
+    background-image: url("Cat 13.jpg");
+}
+
+button:nth-child(14){
+    background-image: url("Cat 14.jpg");
+}
+
+button:nth-child(15){
+    background-image: url("Cat 15.jpg");
+}
+
+button:nth-child(16){
+    background-image: url("Cat 16.jpg");
+}
+
 button:hover{
     background-color: black;
     color: white;
